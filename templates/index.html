@@ -1,1 +1,64 @@
-<h1>Welcome to home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML Project - Student Performance Predictor</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffa07a); /* New gradient */
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero {
+      max-width: 700px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fffacd; /* Light yellow for heading */
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      opacity: 0.95;
+    }
+    .btn-custom {
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-size: 1.1rem;
+      background-color: #ffffff;
+      color: #ff4081;
+      font-weight: bold;
+      border: none;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #ff4081;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>📊 Student Exam Performance Indicator</h1>
+    <p>
+      An End-to-End Machine Learning Project that predicts <br>
+      students' math scores based on key academic and demographic factors.
+    </p>
+    <a href="{{ url_for('predict_datapoint') }}" class="btn btn-custom mt-3">
+      🚀 Start Prediction
+    </a>
+  </div>
+
+</body>
+</html>
